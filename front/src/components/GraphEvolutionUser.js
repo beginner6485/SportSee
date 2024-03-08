@@ -27,14 +27,6 @@ useEffect(() => {
   fetchData();
 }, [id]);
 
-/*const filteredData = USER_ACTIVITY.find(item => (item.id === parseInt(id, 10)) || (item.userId === parseInt(id, 10)));
-console.log(filteredData);
-
- const modifiedData = filteredData.sessions.map((session, index) => ({
-  ...session,
-  day: index + 1,
-  }));
-console.log(modifiedData); */
 
     return(
       <div className="accl_app">
