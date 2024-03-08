@@ -1,0 +1,239 @@
+.name_style{
+    color: red;
+
+}
+
+.mock_flex{
+    display: flex;
+    margin: 70px;
+}
+
+.mock_space{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+}
+
+.space_gram{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.mock_perf_space{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accl_nav{
+    display: flex;
+}
+
+.mock_stats{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.accl_app{
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.users_sessions{
+    background-color: red;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .user_activity{
+    width: 250px;
+  }
+
+.accl_graph{
+    height: 300px;
+    background-color:#FBFBFB;
+        /*width: 100px;*/
+    margin-bottom: 30px;
+}
+
+.stat_space{
+    background-color: antiquewhite;
+    height: 300px;
+}
+
+.user_Font{
+    display: flex;
+    height: auto;
+    background-color: #FBFBFB;
+    align-items: center;
+}
+
+.Icon{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Font{
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: bisque;
+
+}
+
+.user_stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:800px;
+        /*width: 100px;*/
+
+}
+
+.user{
+    font-size: larger;
+    font-weight: 700;
+    height: 25px;
+}
+
+.user_space{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 10%;
+}
+
+.unity{
+    color: #74798C;
+    font-weight: 500;
+}
+
+.flam{
+    background-color: lightcoral;
+    filter: brightness(170%);
+}
+
+.iconFlam{
+    color:crimson;
+}
+
+.chick{
+    background-color:#3e9ae056;
+
+}
+
+.iconChick{
+    color:#3e9ae0;
+}
+
+.apple{
+    background-color:#f6df5f39;
+}
+
+.iconApple{
+    color: #f6df5f;
+}
+
+.burger{
+    background-color:#fbc3e16e
+}
+
+.iconBurger{
+    color:#ff1493;
+}
+
+.accl_score{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score_space{
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.score_txt{
+    display: flex;
+    position: absolute; 
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFBFB;
+    width: inherit;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.percent{
+    font-size: 30px;
+    display: block;
+}
+
+.percent_txt{
+    color: #74798C;
+    width: 60px;
+    text-align: center;
+    display: block;
+}
+
+.accl_score{
+    width: 30%;
+    height: 300px;
+}
+
+
+.accl_performance{
+    width: 100%;
+    border-radius: 10px
+
+}
+
+.custom-legend {
+    font-weight: 200;
+  }
+
+
+@media screen and (max-width: 1024px) {
+
+    .accl_app{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .mock_flex{
+        width: 100%;
+        margin: 20px;
+    }
+
+    .space_gram{
+        width: 100%;
+    }
+
+    .accl_performance{
+        width: 150px;
+    }
+
+    .accl_score{
+        width: 150px;
+    }
+
+
+}

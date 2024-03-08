@@ -1,0 +1,116 @@
+.App-header{
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-nav{
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  background-color: black;
+  width: 140px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-icon{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+
+}
+
+nav{
+  width: 100%;
+}
+
+.App-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav-title{
+  color: white;
+  list-style-type: none;
+  font-size: large;
+  font-weight: 800;
+}
+
+.icon-style{
+  font-size: 40px;
+    color: red;
+    position: relative;
+    width: 100%;
+    align-self: center;
+
+}
+
+.icon-right{
+  transform: scaleX(-1);
+}
+
+.icon-space{
+    width: 80px;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.modules-space{
+  width: 90%;
+  float: inline-end;
+}
+
+.styleError{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+.Error{
+  text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: xxx-large;
+}
+
+.textError{
+  text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.linkError{
+  text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.copyright{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); 
+  color: white;
+}
+
+
+.time_session_title{
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+
+  
+
+}
