@@ -33,7 +33,7 @@ function TimeSessionsUser() {
       const daysOfWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D']; // Correspondance des chiffres aux lettres des jours
       return daysOfWeek[day - 1];
     } 
-    console.log(userData)
+   
     return (
       <div className="users_sessions">
         {loading ? (
@@ -47,11 +47,11 @@ function TimeSessionsUser() {
                 <LineChart width={280} height={300}
                   data={userData.sessions}
                   margin={{ top: 50, right: 5, left: 5, bottom: -10 }}>
-                  <text x="150" y="20"
-                    textAnchor="middle"
+                  <text x="30" y="30"
+                    textAnchor="left"
                     dominantBaseline="middle"
                     fontWeight="bold"
-                    fontSize="16"
+                    fontSize="12"
                     fill="white">Durée moyenne des sessions</text>
 
                   <XAxis dataKey="day"

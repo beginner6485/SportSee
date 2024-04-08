@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { fetchUserData } from '../Api/getData';
 
 function Graph () {
@@ -9,7 +8,6 @@ function Graph () {
     const getUserInfo = async () => {
       const response = await fetchUserData ();
       setUserInfos (response.userInfos);
-      console.log(response)
     }
     getUserInfo ();
   },[]);

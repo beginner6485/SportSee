@@ -1,11 +1,15 @@
 .name_style{
     color: red;
+    font-weight: 500;
+}
 
+.recharts-legend-item-text{
+    font-weight: 500;
 }
 
 .mock_flex{
     display: flex;
-    margin: 70px;
+    margin: 0px;
 }
 
 .mock_space{
@@ -21,9 +25,11 @@
 }
 
 .mock_perf_space{
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    margin: 20px;
+    margin-left: 50px;
 }
 
 .accl_nav{
@@ -35,6 +41,10 @@
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.mock_activity{
+    margin-top:10px
 }
 
 .accl_app{
@@ -57,7 +67,7 @@
 .accl_graph{
     height: 300px;
     background-color:#FBFBFB;
-        /*width: 100px;*/
+    width: 90%;
     margin-bottom: 30px;
 }
 
@@ -71,6 +81,7 @@
     height: auto;
     background-color: #FBFBFB;
     align-items: center;
+    height: 150px;
 }
 
 .Icon{
@@ -80,12 +91,12 @@
 
 .Font{
     width: 80px;
-    height: 80px;
+    height: 60px;
     align-items: center;
     justify-content: center;
     display: flex;
     font-size: xx-large;
-    margin: 40px;
+    margin: 20px;
     border-radius: 10px;
     background-color: bisque;
 
@@ -104,6 +115,7 @@
     font-size: larger;
     font-weight: 700;
     height: 25px;
+    width: 150px;
 }
 
 .user_space{
@@ -111,6 +123,7 @@
     flex-direction: column;
     align-self: center;
     margin-right: 10%;
+    width: 100px;
 }
 
 .unity{
@@ -181,6 +194,7 @@
     width: inherit;
     height: 300px;
     border-radius: 10px;
+    font-weight: 400;
 }
 
 .percent{
@@ -211,6 +225,9 @@
     font-weight: 200;
   }
 
+  .graph_title {
+    font-weight: 500;
+  }
 
 @media screen and (max-width: 1024px) {
 

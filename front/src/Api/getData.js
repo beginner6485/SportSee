@@ -1,8 +1,8 @@
 import axios from "axios";
 import { USER_MAIN_DATA, USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_PERFORMANCE } from "../data";
+import Error from "../components/Error";
 
-
-const mock = false; 
+const mock = true; 
 
 export const fetchUserData = async (id) => {
     if (!mock) { 
@@ -10,7 +10,7 @@ export const fetchUserData = async (id) => {
         try {
         const response = await axios.get(`http://localhost:3000/user/${id}`);
         return(response.data.data)
-        
+
       } catch (error) {
         console.error('Erreur lors de la récupération des données :', error);
         return (null)

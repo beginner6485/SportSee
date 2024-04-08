@@ -2,6 +2,7 @@ import '../styles/mock_styles.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { fetchUserDataGraph } from '../Api/getData';
 import { useParams } from 'react-router-dom';
+import { dayModelClass } from '../utils/modelClass';
 import React, { useEffect, useState } from 'react';
 
 
@@ -16,7 +17,9 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const data = await fetchUserDataGraph(id);
-      setUserData(data);
+      const modelClass = new dayModelClass();
+      const dataFinal = modelClass.formatUserActivity(data);
+      setUserData(dataFinal);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -26,7 +29,6 @@ useEffect(() => {
 
   fetchData();
 }, [id]);
-
 
     return(
       <div className="accl_app">
@@ -42,7 +44,7 @@ useEffect(() => {
           <BarChart
             width={300}
             height={300}
-            data={userData.sessions} 
+            data={userData} 
             margin={{
               top: 5,
               right: 30,

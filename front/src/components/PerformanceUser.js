@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer } from 'recharts';
 import { fetchUserDataPerf } from '../Api/getData.js';
 import { useParams } from 'react-router-dom';
-import ModelClass from '../utils/modelClass.js';
+import { ModelClass } from '../utils/modelClass.js';
 
 function PerformanceUser (){
     
@@ -42,8 +42,8 @@ function PerformanceUser (){
             <div className="accl_performance">
               <ResponsiveContainer width="100%" height={300}>
                 <RadarChart
-                  outerRadius={90}
-                  width={280}
+                  outerRadius={70}
+                  width={250}
                   height={300}
                   data={userData}
                   style={{ background: '#323030', color: 'red', borderRadius:'10px' }}

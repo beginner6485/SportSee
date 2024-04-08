@@ -27,6 +27,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+=> (important) to connect please add endpoint /user/12 or /user/18.  // Note dev Front-end.
+Open (http://localhost:3001/user/12 or 18) to view it in your browser.
+
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
