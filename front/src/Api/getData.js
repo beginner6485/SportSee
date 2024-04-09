@@ -2,7 +2,7 @@ import axios from "axios";
 import { USER_MAIN_DATA, USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_PERFORMANCE } from "../data";
 import Error from "../components/Error";
 
-const mock = true; 
+const mock = false; 
 
 export const fetchUserData = async (id) => {
     if (!mock) { 

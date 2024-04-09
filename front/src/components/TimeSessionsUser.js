@@ -3,6 +3,7 @@ import { ReferenceArea, LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContai
 import { useParams } from 'react-router-dom';
 import React, {useEffect, useState } from 'react';
 import { fetchUserDataTime } from '../Api/getData';
+import { mapDayToDayOfWeek } from '../utils/modelClass';
 
 function TimeSessionsUser() {
 
@@ -27,13 +28,7 @@ function TimeSessionsUser() {
     fetchData();
   }, [id]);
 
-  let mapDayToDayOfWeek;
-  if (userData) {
-    mapDayToDayOfWeek = (day) => {
-      const daysOfWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D']; // Correspondance des chiffres aux lettres des jours
-      return daysOfWeek[day - 1];
-    } 
-   
+  
     return (
       <div className="users_sessions">
         {loading ? (
@@ -76,6 +71,5 @@ function TimeSessionsUser() {
       </div>
     );
   }
-}
 
 export default TimeSessionsUser;

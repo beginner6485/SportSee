@@ -20,13 +20,16 @@ export class ModelClass{
 
   export class dayModelClass {
     formatUserActivity(filteredData) {
-        console.log(filteredData);
         const formatDay = filteredData.sessions.map((session, index) => ({
             day: index + 1,
             kilogram: session.kilogram,
             calories: session.calories
-        }));
-        console.log(formatDay);
+        }));console.log(filteredData)
         return formatDay;
     }
 }
+
+    export let mapDayToDayOfWeek = (day) => {
+      const daysOfWeek = ['L', 'M', 'M', 'J', 'V', 'S', 'D']; // Correspondance des chiffres aux lettres des jours
+      return daysOfWeek[day - 1];
+    } 
